@@ -1,6 +1,3 @@
-DROP TABLE if exists`customer`;
-DROP TABLE if exists `accounts`;
-DROP TABLE if exists `account`;
 
 CREATE TABLE IF NOT EXISTS `customer` (
      `customer_id` int AUTO_INCREMENT  PRIMARY KEY,

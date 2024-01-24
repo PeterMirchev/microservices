@@ -2,7 +2,11 @@ package com.eazybytes.accounts.mapper;
 
 import com.eazybytes.accounts.dto.CustomerDto;
 import com.eazybytes.accounts.entyty.Customer;
+import lombok.Builder;
+import lombok.Data;
 
+@Data
+@Builder
 public class CustomerMapper {
 
     public static CustomerDto mapToCustomerDto(Customer customer, CustomerDto customerDto) {
