@@ -5,7 +5,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.*;
-import org.hibernate.annotations.GenericGenerator;
 
 @Getter
 @Setter
@@ -13,6 +12,7 @@ import org.hibernate.annotations.GenericGenerator;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Builder
 public class Customer extends BaseEntity{
 
     @Id
@@ -24,5 +24,6 @@ public class Customer extends BaseEntity{
     private String email;
 
     private String mobileNumber;
+
 
 }
